@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* body{
+     position: relative; 
+} */
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: bold;
+    padding-top: 4%;
+    margin-bottom: 3%;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    color: green;
+}
+p{
+    font-size: 1.5em;
+    font-weight: 350;
+    text-align: justify;
+    padding-top: 2%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* gestion du header */
+
+.header1{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(0, 0, 0,0.2);
+ }
+.header1 .liens{
+    display: flex;
+    gap: 45%;
+}
+
+.logo{
+    width: 300px;
+}
+.logo img{
+    width: 100%;
+}
+
+/* style des produits */
+
+.produits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-height: 240vh; */
+}
+.produitss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2%;
+}
+.produits img{
+    width: 40%;
+    border-radius: 10px;
+}
+.propriete{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.produit{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 6px rgba(0, 0, 0,0.05);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1%;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+ul{
+    padding-top: 2%;
+    list-style-type: none;
+}
+li{ 
+    font-size: 1.4em;
+    font-weight: 350;
+}
+.nomduproduit{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+}
+
+/* gestion du footer */
+
+.footer a img{
+    width: 35px;
+}
+.footer a{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    color: rgba(0, 0, 0,0.6);
+}
+.footer p{
+    font-size: 0.8em;
+}
+.footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer h3{
+    font-size: 1.8em;
+    color: rgba(0, 0, 0,0.6); 
+}
+.liens{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer{
+    display: flex;
+    gap: 65%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(0, 0, 0,0.2);
+}
+/* .footer span{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0,0.6); 
+} */
+/* gestion de la section babi */
+
+.babi{
+    height: 90vh;
+    width: 100vw; 
+    background-image: url('photo_2023-12-16_10-45-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*expos*/
+
+.expos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expos{
+    background-color: rgba(173, 255, 47,0.05);
+}
+.photos_expos{
+    display: block;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.lienconteneurphoto {
+    position: relative;
+}
+.photos_expos{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 400px 400px ;
+    gap: 15px;
+}
+.lienconteneurphoto:hover .photo-hover {
+    display: flex;
+}
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.h2{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+@media all and (max-width: 600px){
+    .produits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .produitss{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .produit{
+       width: 98%;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .h2{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.2em;
+        margin-left: 3.5%;
+    }
+    li{ 
+        font-size: 1.1em;
+        margin-left: 3.5%;
+    }
+    .photos_expos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .expos img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    } */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 25%;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .footer a img{
+        width: 25px;
+    }
+    .footer a{
+        gap: 1%;
+    }
+    .footer p{
+        font-size: 0.7em;
+    }
+    .footer h3{
+        font-size: 1.2em;
+        color: rgba(0, 0, 0,0.6); 
+    }
+}
